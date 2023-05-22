@@ -1,0 +1,18 @@
+<div class="container box1" *ngIf="character != null; else wait">
+  <div class="row g-0 row1">
+    <div class="col-12 col-lg-6">
+      <img class="img1" src="{{ character.image }}" alt="{{ character.name }}" />
+    </div>
+    <div class="col-12 col-lg-6 col1">
+      <h1><strong>{{ character.name }}</strong></h1>
+      <h3>{{ character.status }}</h3>
+      <h5 class="greyText">Species</h5>
+      <h3> {{ character.species }}</h3>
+      <h5 class="greyText">Origin</h5>
+      <h3> {{ character.origin.name }}</h3>
+      <h5 class="greyText">Last known location</h5>
+      <h3> {{ character.location.name }}</h3>
+    </div>
+  </div>
+</div>
+<ng-template #wait>Waiting data...</ng-template>

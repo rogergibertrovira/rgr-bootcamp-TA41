@@ -1,0 +1,26 @@
+.box1 {
+  margin: 15px;
+}
+
+.row1 {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.row2 {
+  padding: 15px;
+  border: 1px solid rgb(203, 203, 203);
+  border-top: none;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.button1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 85%;
+}

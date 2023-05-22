@@ -1,0 +1,35 @@
+<div class="container-fluid" *ngIf="characters != null; else wait">
+  <div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[0]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[1]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[2]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[3]"></app-character-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[4]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[5]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[6]"></app-character-card>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <app-character-card [character]="characters[7]"></app-character-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #wait>Waiting data...</ng-template>
